@@ -1,4 +1,4 @@
-
+# A management system written in react+typescript
 
 const values = {
   xs: 0,
