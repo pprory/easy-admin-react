@@ -14,7 +14,7 @@ const Router: FC = () => {
                     exact
                     key={index}
                     render={props => {
-                        return getToken() ? <item.component {...props} /> : <Redirect to={"/login?redirect=" + item.path} />
+                        return getToken() ? <item.component children {...props} /> : <Redirect to={"/login?redirect=" + item.path} />
                     }}
                 />
             }))}
